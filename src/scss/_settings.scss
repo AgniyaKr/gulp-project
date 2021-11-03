@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $text;
+  font-size: 14px;
+  line-height: 1.3;
+  @extend %montserrat-400;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  @extend %montserrat-600;
+  font-size: 42px;
+  line-height: 52px;
+  color: $title;
+}
+
+.subtitle {
+  @extend %montserrat-600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $title;
+}
+
+.text {
+  @extend %montserrat-400;
+  font-size: 14px;
+  line-height: 25px;
+  color: $text;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: $title;
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
+  color: $bg;
+  font-size: 14px;
+  line-height: 18;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+  color: $title;
+  background-color: $bg;
+  border-radius: 5px;
+  border: 1px solid #FFF8EB;
+  padding: 10px;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &__figures {
+    width: 30px;
+    height: 30px;
+    color: $bg;
+    background-color: $title;
+    border-radius: 5px;
+    padding: 8px;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+
+img {
+  border-radius: 20px;
+}
